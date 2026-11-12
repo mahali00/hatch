@@ -15,7 +15,7 @@
 
 It works like the other Rex clients. Pair it with your server, then use your sessions, tabs and terminals from a phone, a fold or a tablet. The terminal is [libghostty-vt](https://github.com/ghostty-org/ghostty).
 
-It is an experiment, shared as is. There is no APK to download, and it may break as Rex changes.
+**[Download the APK](https://github.com/mahali00/hatch/releases/latest)** for ARM phones, folds and tablets on Android 8.0 or newer. It is an experiment, shared as is, and it may break as Rex changes.
 
 Rex does not authenticate connections, so keep your server on a network you trust or behind a tunnel such as Tailscale.
 

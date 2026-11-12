@@ -13,11 +13,25 @@ val devHost: String = Properties().apply {
     properties.getProperty("hatch.devHost") ?: properties.getProperty("rex.devHost", "")
 }
 
+// Release signing from the untracked ~/.gradle/gradle.properties (hatch.signing.*); without it
+// the release APK stays unsigned.
+val signing = listOf("storeFile", "storePassword", "keyAlias", "keyPassword")
+    .associateWith { providers.gradleProperty("hatch.signing.$it").orNull }
+
 android {
     buildFeatures { buildConfig = true }
+    if (signing.values.all { it != null }) signingConfigs.create("release") {
+        storeFile = file(signing.getValue("storeFile")!!)
+        storePassword = signing["storePassword"]
+        keyAlias = signing["keyAlias"]
+        keyPassword = signing["keyPassword"]
+    }
     buildTypes {
         debug { buildConfigField("String", "DEV_HOST", "\"$devHost\"") }
-        release { buildConfigField("String", "DEV_HOST", "\"\"") }
+        release {
+            buildConfigField("String", "DEV_HOST", "\"\"")
+            signingConfig = signingConfigs.findByName("release")
+        }
         // Measured on the development host like the debug build; never shipped.
         getByName("benchmark") { buildConfigField("String", "DEV_HOST", "\"$devHost\"") }
     }
