@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <activity
+            android:name="dev.mahali.hatch.feature.terminal.SplitPanePreviewActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Material.NoActionBar" />
+    </application>
+</manifest>

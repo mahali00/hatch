@@ -1,0 +1,8 @@
+{
+  "colorEncoding" : "sRGB #AARRGGBB",
+  "conversion" : "AppKit ColorSync Display P3 -> sRGB; out-of-gamut values clipped; alpha preserved",
+  "purpose" : "User-requested local development; redistribution rights not established",
+  "source" : "Rex Mac 0.1.0 (1853), bundled SuperDesignTokens\/themes.json",
+  "sourceSHA256" : "443b671d35c39b5fff12468e360c014a1600fed814ef2c43a538aeab5265bdcf",
+  "themeCount" : 41
+}

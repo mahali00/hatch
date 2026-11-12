@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+
+    <!--
+      Pairing accepts plain HTTP, and the socket layer rewrites it to ws://. Android 9+ blocks
+      that cleartext unless the app allows it. The host is typed or scanned at runtime, so a
+      domain allowlist cannot name it ahead of time.
+    -->
+    <application
+        android:name=".HatchApp"
+        android:label="Hatch"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Hatch"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:usesCleartextTraffic="true">
+        <!-- Hosts are the user's own servers at addresses they type (LAN, Tailscale), so no domain list
+             can name them: http:// hosts need cleartext app-wide, or Android blocks every connection. -->
+        <receiver android:name=".PromptAnswerReceiver" android:exported="false" />
+
+        <!-- Lets macrobenchmarks profile release builds. -->
+        <profileable android:shell="true" tools:targetApi="29" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize|keyboard|keyboardHidden|density|uiMode"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- "Stay connected in background": keeps the control connections open so notifications arrive. -->
+        <service
+            android:name=".ConnectionService"
+            android:exported="false"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="Keeps connections to the user's own Rex servers open so program notifications arrive." />
+        </service>
+    </application>
+</manifest>

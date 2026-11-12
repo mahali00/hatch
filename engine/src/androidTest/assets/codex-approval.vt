@@ -1,0 +1,41 @@
+[?25l[?1004h[?2004h[3g[9GH[17GH[25GH[33GH[41GH[49GH[57GH[65GH[73GH[81GH[89GH[97GH[105GH[H
+
+  [0m[38;2;99;168;248m>_ [0m[1mOpenAI Codex[0m[2m (v0.167.0)[0m
+     [0m[2m/var/folders/pm/9qp8wp2s22ddlbdj_hwzwgn00000gn/T/hatch-rex-direct-ndUTof[0m
+
+  [0m[1m[38;2;243;139;168mTip:[0m Use the [0m[1m[38;2;243;139;168mdesktop app[0m. Run [0m[38;2;166;227;161mcodex app[0m to open it. It installs automatically if needed.
+
+[0m[48;5;8m[110X[110C[0m
+[0m[1m[2m[48;5;8m› [0m[48;5;8mRun exactly this harmless command once using the command execution tool: /usr/bin/python3 -c[16X[16C[0m
+[0m[48;5;8m  'print("HATCH_REX_DIRECT_POC")'. Do not use other tools, read or change files, or run alternative commands.[1X[1C[0m
+[0m[48;5;8m  Explicitly request elevated execution permission for this print-only command to exercise the approval[7X[7C[0m
+[0m[48;5;8m  prompt. If denied, stop. This tests approval buttons over a Rex terminal.[35X[35C[0m
+[0m[48;5;8m[110X[110C[0m
+
+[0m[2m• [0mI’ll run the print-only command once with an elevated execution permission request.
+ 
+[0m[1m[38;2;167;167;167m•[0m [0m[1mRunning[0m [0m[38;2;137;180;250m/usr/bin/python3[0m[38;2;147;153;178m -[0m[38;2;235;160;172mc[0m[38;2;205;214;244m [0m[38;2;166;227;161m'print("HATCH_REX_DIRECT_POC")'[0m
+ 
+ 
+  [0m[1mWould you like to run the following command?[0m
+ 
+  Environment: [0m[1mlocal[0m
+ 
+  Reason: [0m[3mAllow this print-only command to test the approval buttons in the Rex terminal?[0m
+ 
+  $ [0m[38;2;137;180;250m/usr/bin/python3[0m[38;2;147;153;178m -[0m[38;2;235;160;172mc[0m[38;2;205;214;244m [0m[38;2;166;227;161m'print("HATCH_REX_DIRECT_POC")'[0m
+ 
+ 
+[0m[1m[7m› 1. Yes, proceed (y)                                                                                         [0m
+  2. Yes, and don't ask again for commands that start with `/usr/bin/python3 -c
+     'print("HATCH_REX_DIRECT_POC")'` ([0m[1mp[0m)
+  3. No, and tell Codex what to do differently ([0m[1mesc[0m)
+ 
+  [0m[2mPress [0m[1menter[0m[2m to confirm or [0m[1mesc[0m[2m to cancel                                                                     [0m
+
+
+
+
+
+
+[16;2H[0m

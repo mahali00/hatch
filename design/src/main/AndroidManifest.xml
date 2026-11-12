@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- A Tailscale host's notice follows whether a VPN is up (the app declares this too). -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- To tell whether Tailscale is installed, for a Tailscale host's notice (Android 11 hides other apps). -->
+    <queries>
+        <package android:name="com.tailscale.ipn" />
+    </queries>
+</manifest>

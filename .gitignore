@@ -1,0 +1,15 @@
+.gradle/
+.kotlin/
+build/
+.cxx/
+.idea/
+*.iml
+local.properties
+.DS_Store
+# Session notes and recordings. They can name hosts and show terminal contents.
+.context/
+.claude/
+__pycache__/
+*.pyc
+# Built from source by scripts/build-ghostty.sh; only headers, LICENSE and COMMIT are tracked.
+ghostty/src/main/cpp/ghostty/lib/

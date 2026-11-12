@@ -1,0 +1,40 @@
+[?25l[?1000h[?1002h[?1003h[?1004h[?1006h[?1049h[?2004h[?2031h[3g[9GH[17GH[25GH[33GH[41GH[49GH[57GH[65GH[73GH[81GH[89GH[97GH[105GH[H
+[0m[38;2;215;119;87m ▐[0m[38;2;215;119;87m[48;2;0;0;0m▛███▛█[3C[0m[1mClaude Code[1C[0m[38;2;153;153;153mv2.1.322[0m
+[0m[38;2;215;119;87m▝▜[0m[38;2;215;119;87m[48;2;0;0;0m█████[0m[38;2;215;119;87m█▀[2C[0m[38;2;153;153;153mOpus 5.5 · Claude Team[0m
+[0m[38;2;215;119;87m ▝▝   ▝▝ [2C[0m[38;2;153;153;153m~/Developer/rex-android[0m
+
+[0m[38;2;255;193;7m⚠[1CSafe mode: all customizations are disabled (CLAUDE.md, skills, plugins, hooks, MCP, agents, and more)[0m
+[2C[0m[38;2;153;153;153mRestart without --safe-mode to re-enable[0m
+
+[2CFable[1C5.2[1Cis[1Chere[1Cfor[1Cyour[1Clongest[1Cand[1Ctoughest[1Ccoding[1Ctasks.[1CIt[1Cdraws[1Cdown[1Cusage[1Cfaster[1Cthan[1COpus[1C5.5.[1CYou
+[2Calso[1Cget[1Ca[1Cfree[1CFable[1Climit[1Creset[1Cto[1Credeem[1Cat[1Cclau.de/reset[1Cby[1CMarch[1C8,[1C2027.[1CSwitch[1Cwith[1C[0m[38;2;177;185;249m/model[0m.
+
+[0m[38;2;153;153;153m[48;2;55;55;55m❯ [0m[38;2;255;255;255m[48;2;55;55;55mRun exactly /usr/bin/python3 -c 'print("HATCH_REX_CLAUDE_POC")' once. This harmless print tests an approval[0m[48;2;55;55;55m [0m
+[0m[48;2;55;55;55m  [0m[38;2;255;255;255m[48;2;55;55;55mprompt over Rex.[0m[48;2;55;55;55m                                                                                            [0m
+
+[0m[38;2;153;153;153m [1C[0mPrinting a test[1Cstring with[1CPython
+[0m[38;2;153;153;153m  ⎿  $ /usr/bin/python3 -c 'print("HATCH_REX_CLAUDE_POC")'[0m
+
+[0m[38;2;177;185;249m──────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[1C[0m[1m[38;2;177;185;249mBash command[0m
+[1C[0m[38;2;153;153;153mPrint a test string with Python[0m
+[0m[38;2;80;80;80m╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌[0m
+[1C/usr/bin/python3[1C-c[1C'print("HATCH_REX_CLAUDE_POC")'
+[0m[38;2;80;80;80m╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌[0m
+[1CPermission[1Crule[1C[0m[1mBash[1C[0mrequires[1Cconfirmation[1Cfor[1Cthis[1Ccommand.
+[1C[0m[38;2;153;153;153m/permissions to update rules[0m
+
+[1CDo[1Cyou[1Cwant[1Cto[1Cproceed?
+[1C[0m[38;2;177;185;249m❯[1C[0m[38;2;153;153;153m1. [0m[38;2;177;185;249mYes[0m
+[3C[0m[38;2;153;153;153m2. [0mNo
+
+[1C[0m[38;2;153;153;153mEsc to cancel · Tab to amend[0m
+
+
+
+
+
+
+
+
+[28;2H[0m
